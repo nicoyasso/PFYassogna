@@ -48,6 +48,11 @@ p {
   font-family: "blinker", sans-serif;
 }
 
+.contact-text {
+  color: #f5f5f5;
+  font-family: "blinker", sans-serif;
+}
+
 /* << ------------------------------ utils ------------------------------ >> */
 .posDatesize, .pos-date-down, .pos-date-medium {
   border-top: 1px solid #fafafa;
@@ -107,6 +112,11 @@ header {
   color: #f5f5f5;
   padding: 10px 0;
 }
+@media screen and (max-width: 767px) {
+  .card-footer-down {
+    padding: 0;
+  }
+}
 
 .card-footer-body {
   background-color: #01445C;
@@ -116,11 +126,21 @@ header {
 .card-footer-body h5 {
   font-size: 25px;
 }
+@media screen and (max-width: 767px) {
+  .card-footer-body h5 {
+    font-size: 20px;
+  }
+}
 
 .footer-links a {
   color: rgba(0, 255, 255, 0.8);
   font-size: 40px;
   margin: 0 15px;
+}
+@media screen and (max-width: 767px) {
+  .footer-links a {
+    font-size: 30px;
+  }
 }
 
 .card-footer img {
@@ -128,6 +148,11 @@ header {
   background-color: #01445C;
   border-radius: 50px;
   margin-block-start: -40px;
+}
+@media screen and (max-width: 767px) {
+  .card-footer img {
+    width: 70px;
+  }
 }
 
 /* << ------------------------------ index ------------------------------ >> */
@@ -218,7 +243,7 @@ header {
 }
 @media screen and (min-width: 768px) {
   .history {
-    margin: 40px 40px 80px 40px;
+    margin: 40px 80px 80px 80px;
   }
 }
 
@@ -253,6 +278,14 @@ header {
   animation: fadeInRight;
   animation-duration: 1s;
 }
+@media screen and (max-width: 767px) {
+  .prize img {
+    width: 80px;
+    height: 80px;
+    top: 25px;
+    left: 10px;
+  }
+}
 
 /* << ------------------------------ events ------------------------------ >> */
 .events {
@@ -267,11 +300,11 @@ header {
 }
 @media screen and (min-width: 768px) {
   .events {
-    margin: 40px 40px 80px 40px;
+    margin: 40px 80px 80px 80px;
   }
 }
 .events-card {
-  padding: 20px;
+  padding: 0 20px 20px 20px;
   display: grid;
   grid-template-columns: 1fr;
 }
@@ -334,7 +367,7 @@ header {
 }
 @media screen and (min-width: 768px) {
   .pos {
-    margin: 40px 40px 80px 40px;
+    margin: 40px 80px 80px 80px;
   }
 }
 
@@ -344,20 +377,21 @@ header {
   }
 }
 .state {
-  padding: 0px 60px 20px 60px;
+  margin: 0 30px 30px 30px;
 }
 .state label {
   font-size: 30px;
 }
 .state select {
   color: #f5f5f5;
-  width: 100%;
   border: none;
   border-bottom: 1px solid rgba(0, 255, 0, 0.8);
   outline: none;
   border-radius: 20px;
   text-align: center;
-  background-color: rgb(34, 41, 33);
+  background-color: rgb(33, 37, 41);
+  font-size: 18px;
+  width: 50%;
 }
 
 .pos-wrapper {
@@ -410,6 +444,9 @@ header {
   display: grid;
   grid-template-columns: 1fr;
 }
+.place-data i {
+  margin-right: 10px;
+}
 @media screen and (min-width: 768px) {
   .place-data {
     grid-template-columns: 1fr 1fr 1fr;
@@ -433,7 +470,7 @@ header {
 }
 @media screen and (min-width: 768px) {
   .contact {
-    margin: 40px 40px 80px 40px;
+    margin: 40px 80px 80px 80px;
   }
 }
 @media screen and (min-width: 768px) {
@@ -454,7 +491,7 @@ header {
   color: #f5f5f5;
   font-family: "blinker", sans-serif;
   width: 100%;
-  background: none;
+  background: rgb(33, 37, 41);
   border: none;
   border-bottom: 1px solid rgba(255, 0, 0, 0.8);
   outline: none;
@@ -465,7 +502,7 @@ header {
   color: #f5f5f5;
   font-family: "blinker", sans-serif;
   width: 100%;
-  background: none;
+  background: rgb(33, 37, 41);
   border: none;
   border-bottom: 1px solid rgba(255, 0, 0, 0.8);
   outline: none;
@@ -476,7 +513,7 @@ header {
   color: #f5f5f5;
   font-family: "blinker", sans-serif;
   width: 100%;
-  background: none;
+  background: rgb(33, 37, 41);
   border: none;
   border-bottom: 1px solid rgba(255, 0, 0, 0.8);
   outline: none;
@@ -524,12 +561,18 @@ header {
 
 .img-contact {
   max-width: 100%;
+  max-height: 400px;
   border-radius: 0 15px 0 0;
 }
 @media screen and (max-width: 767px) {
   .img-contact {
     display: none;
   }
+}
+
+.contact-text input, .contact-text select, .contact-text textarea {
+  font-style: italic;
+  color: rgb(209, 209, 209);
 }
 
 .instagram-link {

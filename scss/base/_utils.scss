@@ -3,7 +3,7 @@
     background-color: rgba(33, 37, 41);
     border-radius: 15px;
     @include desktop {
-        margin: 40px 40px 80px 40px;
+        margin: 40px 80px 80px 80px;
     }
 }
 
@@ -11,7 +11,7 @@
     color: $fontColor;
     font-family: $fontSecundary;
     width: 100%;
-    background: none;
+    background: rgba(33, 37, 41);
     border: none;
     border-bottom: 1px solid rgba(255, 0, 0, 0.8);
     outline: none;

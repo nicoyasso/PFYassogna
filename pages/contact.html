@@ -4,25 +4,30 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Conéctate con Hoffman a través de nuestros canales de contacto. Descubre más sobre nuestra ginebra única y eventos exclusivos. ¡Contáctanos para experiencias sensoriales inigualables!">
+    <meta name="description"
+        content="Conéctate con Hoffman a través de nuestros canales de contacto. Descubre más sobre nuestra ginebra única y eventos exclusivos. ¡Contáctanos para experiencias sensoriales inigualables!">
     <meta name="keywords" content="contacto, gin, ginebra, destilacion, hoffman, experiencia, drink, bebidas">
     <meta name="robots" content="index,follow">
-    <!-- link bootstrap -->
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
+
+    <!-- Stylesheets -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"
         integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
-    <!-- link CSS -->
     <link rel="stylesheet" href="../css/style.css">
-    <!-- link Animated -->
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+
+    <!-- Font Awesome -->
     <script src="https://kit.fontawesome.com/29a760fd2c.js" crossorigin="anonymous"></script>
+
+    <!-- Favicon -->
     <link rel="icon" type="image/jpg" href="../assets/icons/f.jpg">
+
     <title>Contacto - Gin Hoffman</title>
 </head>
 
 <body>
-    <!-- ------------------------------ INICIO Header ------------------------------ -->
+    <!-- Header -->
     <header>
-        <!-- ------------------------------ INICIO NavBar ------------------------------ -->
+        <!-- NavBar -->
         <nav class="navbar navbar-dark bg-dark sticky-top navbar-expand-md">
             <div class="container-fluid">
                 <a class="navbar-brand">
@@ -62,12 +67,13 @@
                 </div>
             </div>
         </nav>
-        <!-- ------------------------------ FIN NavBar ------------------------------ -->
+        <!-- Fin NavBar -->
     </header>
-    <!-- ------------------------------ FIN Header ------------------------------ -->
+    <!-- Fin Header -->
 
-    <!-- ------------------------------ INICIO Main ------------------------------ -->
+    <!-- Main -->
     <main>
+        <!-- Sección de Contacto -->
         <section class="contact">
             <div class="contact-wrapper">
                 <div class="title-page">
@@ -76,35 +82,39 @@
                 <article class="contact-form">
                     <div class="data">
                         <form action="">
-                            <p>
-                                <label for="">Nombre Completo</label>
-                                <input type="text" name="" id="">
-                            </p>
-                            <p>
-                                <label for="">Email</label>
-                                <input type="email" name="" id="">
-                            </p>
-                            <p>
-                                <label for="">Telefono</label>
-                                <input type="tel" name="" id="">
-                            </p>
-                            <p>
-                                <label for="">Motivo</label>
-                                <select class="select" aria-label="Default select example">
+                            <!-- <p> -->
+                            <div class="contact-text">
+                                <label for="name">Nombre Completo</label>
+                                <input type="text" name="" id="name">
+                            </div>
+                            <div class="contact-text">
+                                <label for="mail">Email</label>
+                                <input type="email" name="" id="mail">
+                            </div>
+                            <div class="contact-text">
+                                <label for="phone">Telefono</label>
+                                <input type="number" name="" id="phone">
+                            </div>
+                            <div class="contact-text">
+                                <label for="issue">Motivo</label>
+                                <select class="select" aria-label="Default select example" id="issue">
                                     <option value="1">Consulta</option>
                                     <option value="2">Compra Producto</option>
                                     <option value="3">Evento</option>
                                 </select>
-                            </p>
-                            <p class="sms">
-                                <label for="">Mensaje</label>
-                                <textarea name="" id="" rows="5"></textarea>
-                            </p>
-                            <p class="submit">
-                                <button type="submit" class="btn btn-danger">
-                                    Enviar
-                                </button>
-                            </p>
+                            </div>
+                            <div class="contact-text">
+                                <p class="sms">
+                                    <label for="message">Mensaje</label>
+                                    <textarea name="" id="message" rows="5"></textarea>
+                            </div>
+                            <div class="contact-text">
+                                <p class="submit">
+                                    <button type="submit" class="btn btn-danger">
+                                        Enviar
+                                    </button>
+                                </p>
+                            </div>
                         </form>
                     </div>
                 </article>
@@ -124,7 +134,9 @@
             </article>
         </section>
     </main>
-    <!-- ------------------------------ INICIO Footer ------------------------------ -->
+    <!-- Fin Main -->
+
+    <!-- Footer -->
     <footer>
         <div class="card-foot text-center">
             <div class="card-footer-body">
@@ -143,13 +155,12 @@
             </div>
         </div>
     </footer>
-    <!-- ------------------------------ FIN Footer ------------------------------ -->
+    <!-- Fin Footer -->
 
-    <!-- ---------------------------- INICIO link script bootstrap ---------------------------- -->
+    <!-- Scripts Bootstrap -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
         crossorigin="anonymous"></script>
-    <!-- ---------------------------- FIN link script bootstrap ---------------------------- -->
 </body>
 
 </html>

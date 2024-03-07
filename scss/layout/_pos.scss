@@ -16,7 +16,7 @@
 }
 
 .state {
-    padding: 0px 60px 20px 60px;
+    margin: 0 30px 30px 30px;
 
     label {
         font-size: 30px;
@@ -24,13 +24,14 @@
 
     select {
         color: $fontColor;
-        width: 100%;
         border: none;
         border-bottom: 1px solid rgba(0, 255, 0, 0.8);
         outline: none;
         border-radius: 20px;
         text-align: center;
-        background-color: rgb(34, 41, 33);
+        background-color: rgb(33, 37, 41);
+        font-size: 18px;
+        width: 50%;
     }
 }
 
@@ -50,34 +51,43 @@
 .pos-date {
     margin: 0 30px;
 
+
+
     &-medium {
         @extend .posDatesize;
+
         @include desktop {
             border-left: 1px solid #fafafa;
-        border-top: none;
-        margin: 0;
+            border-top: none;
+            margin: 0;
         }
+
         h4 {
             margin-top: 20px;
+
             @include desktop {
                 margin-top: 0;
-                }
+            }
         }
     }
 
     &-down {
         @extend .posDatesize;
+
+
         @include desktop {
             border-left: 1px solid #fafafa;
-        border-top: none;
-        margin: 0;
+            border-top: none;
+            margin: 0;
         }
+
         h4 {
             margin-top: 20px;
+
             @include desktop {
-            margin-top: 0;
+                margin-top: 0;
             }
-            
+
         }
     }
 }
@@ -85,6 +95,11 @@
 .place-data {
     display: grid;
     grid-template-columns: 1fr;
+
+    i {
+        margin-right: 10px;
+    }
+
     @include desktop {
         grid-template-columns: 1fr 1fr 1fr;
         justify-content: center;
